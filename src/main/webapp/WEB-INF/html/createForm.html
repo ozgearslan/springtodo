@@ -1,0 +1,7 @@
+<form action="#" th:action="@{/todo/create}" th:object="${todo}" method="post">
+    <p>Name: <input type="text" th:field="*{name}" /></p>
+     <p>Description: <input type="text" th:field="*{desc}" /></p>
+      <p>Date: <input type="date" th:field="*{dueDate}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+
